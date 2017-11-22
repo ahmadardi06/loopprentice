@@ -141,10 +141,7 @@ if($message_sales != '{}') {
                       <img class="d-block w-100" src="libs/img/hd1.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="libs/img/hd2.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="libs/img/hd3.png" alt="Third slide">
+                      <img class="d-block w-100" src="libs/img/hd3.png" alt="Second slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="libs/img/hd4.png" alt="Third slide">

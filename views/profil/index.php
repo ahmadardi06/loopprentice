@@ -149,7 +149,7 @@
                 </div>   
 
                 <button type="submit" class="btn btn-lg btn-success">Simpan</button> 
-                <button class="btn btn-lg btn-danger">Cancel</button>
+                <button class="btn btn-lg btn-danger" href="?page=privatearea_prentice&action=index">Cancel</button>
                 <br><br>
           </div>
 
