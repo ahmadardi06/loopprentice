@@ -14,6 +14,19 @@ class BlogModelFront {
     return $list;
   }
 
+  public static function getBlogCategory($kriteria)
+  {
+    $list = [];
+    $db = Db::getInstance();
+    $req = $db->query("SELECT * FROM PERF_POSTING WHERE post_kategori LIKE '%".$kriteria."%' ORDER BY post_date DESC LIMIT 0,10");
+
+    foreach($req->fetchAll(PDO::FETCH_OBJ) as $data) {
+       $list[] = $data;
+    }
+
+    return $list; 
+  }
+
   public static function getOneBlog($idnya)
   {
     $db   = Db::getInstance();
