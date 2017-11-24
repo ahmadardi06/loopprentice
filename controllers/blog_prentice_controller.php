@@ -1,8 +1,13 @@
 <?php 
 	class blog_PrenticeController {
         public function index() {
-            $datablog = BlogModelFront::getBlog();
-            require_once('views/blog_prentice/index.php');
+        	if(isset($_GET['category'])) {
+            	$datablog = BlogModelFront::getBlogCategory($_GET['category']);
+        	} 
+        	else 
+        	{
+            	$datablog = BlogModelFront::getBlog();
+        	}
         }
 
         public function error() {
