@@ -85,7 +85,7 @@
           <hr>
 
           <!-- Preview Image -->
-          <img class="card-img-top img-fluid rounded" src="http://<?php echo $_SERVER["SERVER_ADDR"];?>/LoopPrentice/libs/img/<?php echo $data[0]->post_cover;?>" alt="<?php echo $data[0]->post_title;?>">
+          <img class="card-img-top img-fluid rounded" src="http://<?php echo $_SERVER["SERVER_ADDR"];?>/loopprentice/libs/img/<?php echo $data[0]->post_cover;?>" alt="<?php echo $data[0]->post_title;?>">
           <br><br>
           
           <div class="single_post">

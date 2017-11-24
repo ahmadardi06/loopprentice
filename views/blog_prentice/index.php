@@ -80,7 +80,7 @@
             ?>
             <!-- Blog Post -->
             <div class="card mb-4">
-              <img class="card-img-top" src="http://<?php echo $_SERVER["SERVER_ADDR"];?>/LoopPrentice/libs/img/<?php echo $key->post_cover;?>" alt="<?php echo $key->post_title;?>">
+              <img class="card-img-top" src="http://<?php echo $_SERVER["SERVER_ADDR"];?>/loopprentice/libs/img/<?php echo $key->post_cover;?>" alt="<?php echo $key->post_title;?>">
               <!-- <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"> -->
               <div class="card-body">
                 <h2 class="card-title"><?php echo $key->post_title;?></h2>
