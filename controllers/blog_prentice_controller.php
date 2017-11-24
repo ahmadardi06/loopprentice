@@ -8,6 +8,7 @@
         	{
             	$datablog = BlogModelFront::getBlog();
         	}
+            require_once('views/blog_prentice/index.php');
         }
 
         public function error() {
