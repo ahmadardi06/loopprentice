@@ -184,17 +184,17 @@
               <div class="row ">
                 <div class="col-lg-12 ">
                   <ul class="list-unstyled mb-0">
-                    <li class="kategori video-widget" >
-                      <a href="#" class=""><i class="fa fa-video-camera" aria-hidden="true"></i> Video / Vlog</a>
+                    <li class="kategori" >
+                      <a href="?page=blog_prentice&action=index&category=Video" class="kategori-link"><i class="fa fa-video-camera" aria-hidden="true"></i> Video / Vlog</a>
                     </li>
-                    <li class="kategori foto-widget">
-                      <a href="#" class=""> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto</a>
+                    <li class="kategori">
+                      <a href="?page=blog_prentice&action=index&category=Foto" class="kategori-link"> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto </a>
                     </li>
-                    <li class="kategori artikel-widget">
-                      <a href="#" class=""><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
+                    <li class="kategori">
+                      <a href="?page=blog_prentice&action=index&category=Article" class="kategori-link"><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
                     </li>
-                    <li class="kategori promo-widget">
-                      <a href="#" class=""><i class="fa fa-shopping-bag" aria-hidden="true"></i> Promo</a>
+                    <li class="kategori">
+                      <a href="?page=blog_prentice&action=index&category=Promo" class="kategori-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Promo</a>
                     </li>
                   </ul>
                 </div>

@@ -84,7 +84,7 @@
               <!-- <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"> -->
               <div class="card-body">
                 <h2 class="card-title"><?php echo $key->post_title;?></h2>
-                <p class="card-text"><?php echo substr(html_entity_decode($key->post_content), 0, 300);?>...</p>
+                <p class="card-text"><?php echo substr(html_entity_decode($key->post_content), 0, 100);?>...</p>
                 <a href="?page=blog_single_prentice&action=index&idblog=<?php echo $key->id_posting;?>" class="btn btn-danger">Read More &rarr;</a>
               </div>
               <div class="card-footer text-muted">
@@ -130,16 +130,16 @@
                 <div class="col-lg-12 ">
                   <ul class="list-unstyled mb-0">
                     <li class="kategori" >
-                      <a href="#" class="kategori-link"><i class="fa fa-video-camera" aria-hidden="true"></i> Video / Vlog</a>
+                      <a href="?page=blog_prentice&action=index&category=Video" class="kategori-link"><i class="fa fa-video-camera" aria-hidden="true"></i> Video / Vlog</a>
                     </li>
                     <li class="kategori">
-                      <a href="#" class="kategori-link"> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto </a>
+                      <a href="?page=blog_prentice&action=index&category=Foto" class="kategori-link"> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto </a>
                     </li>
                     <li class="kategori">
-                      <a href="#" class="kategori-link"><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
+                      <a href="?page=blog_prentice&action=index&category=Article" class="kategori-link"><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
                     </li>
                     <li class="kategori">
-                      <a href="#" class="kategori-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Promo</a>
+                      <a href="?page=blog_prentice&action=index&category=Promo" class="kategori-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Promo</a>
                     </li>
                   </ul>
                 </div>
