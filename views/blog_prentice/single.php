@@ -191,7 +191,7 @@
                       <a href="?page=blog_prentice&action=index&category=Foto" class="kategori-link"> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto </a>
                     </li>
                     <li class="kategori">
-                      <a href="?page=blog_prentice&action=index&category=Article" class="kategori-link"><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
+                      <a href="?page=blog_prentice&action=index&category=Artikel" class="kategori-link"><i class="fa fa-file-text" aria-hidden="true"></i> Artikel</a>
                     </li>
                     <li class="kategori">
                       <a href="?page=blog_prentice&action=index&category=Promo" class="kategori-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Promo</a>
