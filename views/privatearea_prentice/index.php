@@ -30,25 +30,59 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <br>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="profil">
+          <center><img src="libs/img/av1.png" style="border-radius: 50%" class="img-fluid" alt="Responsive image"></center><br>
+          <center><h4  style="color: grey"><?php echo $username; ?></h4></center>
+        </li>
+
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="#">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Excel">
+
+        <!-- excel -->
+<!--         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Excel">
         <a class="nav-link" data-toggle="modal" data-target="#salesModal">
-<!--          <a class="nav-link" href="?page=privatearea_prentice&action=addsales">-->
+
             <i class="fa fa-fw fa-upload"></i>
             <span class="nav-link-text">Upload Excel</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Posting">
+ -->        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Posting">
           <a class="nav-link" href="?page=privatearea_posting&action=index">
             <i class="fa fa-fw fa-pencil-square"></i>
             <span class="nav-link-text">Posting</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-pencil-square"></i>
+            <span class="nav-link-text">Posting</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#"><i class="fa fa-fw fa-camera-retro"></i> Foto</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-fw fa-video-camera"></i> Video</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-fw fa-file-text"></i> Blog</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Point">
+          <a class="nav-link" href="?page=privatearea_user&action=index">
+            <i class="fa fa-fw fa-money"></i>
+            <span class="nav-link-text">Point</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profil User">
@@ -85,33 +119,44 @@
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
 
-
-      <!-- jumbotron -->
-       <div class="row">
-       
-        <div class="col-lg-12">
-          <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-3">Hai , <?php echo $username; ?> </h1>
-              <p class="lead">Selamat datang di Loopprentice.</p>
-                <?php
-                $message_sales = '{}';
-
-                if(isset($_SESSION['message_sales'])) {
-                    $message_sales = $_SESSION['message_sales'];
-                    unset($_SESSION['message_sales']);
-                }
-
-                $message = json_decode($message_sales);
-                if($message_sales != '{}') {
-                    echo $message->message;
-                }
-                ?>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-list"></i>
+              </div>
+              <div class="mr-5"><h1>26</h1> Posting</div>
             </div>
           </div>
-        </div>
-      </div>
 
+
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-money"></i>
+              </div>
+              <div class="mr-5"><h1>200</h1> Point Loopprentice</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-shopping-cart"></i>
+              </div>
+              <div class="mr-5"><h1>4</h1> Promo</div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
       <!-- tabel psting user -->
       <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

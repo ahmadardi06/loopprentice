@@ -470,8 +470,18 @@ if($message_sales != '{}') {
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                         <span id="spanpassword" class="text-danger"></span>
                     </div>
+                    
+                    <div class="form-group">
+                                <button type="submit" class="btn btn-danger  btn-block"  id="login-submit" name="login-submit">Login</button>
+                            
+                        </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-danger" style="width: 200px;" id="login-submit" name="login-submit">Login</button>
+                        
+                        
+                        <!-- facebook -->
+                        <button type="submit" class="btn btn-primary  btn-block"  id="login-submit" name="login-submit"><i class="fa fa-facebook icon-footer"></i> Login dengan Facebook</button>
+                        <!-- google -->
+                        <button type="submit" class="btn btn-danger  btn-block"  id="login-submit" name="login-submit"> <i class="fa fa-google icon-footer"></i> Login dengan Gooogle</button>
                     </div>
                 </form>
             </div>
