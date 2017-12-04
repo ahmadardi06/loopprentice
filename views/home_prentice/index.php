@@ -48,24 +48,14 @@ if($message_sales != '{}') {
     <link href="libs/home_register/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/home_register/general/normalize.css">
     <link rel="stylesheet" type="text/css" href="libs/home_register/general/style.css">
+    <link rel="stylesheet" type="text/css" href="libs/home_register/general/style-index.css">
     <link rel="stylesheet" href="libs/home_register/css/font-awesome.min.css">
     <link rel="stylesheet" href="libs/home_register/css/font-awesome.min.css">
 
     <!-- wow.js -->
     <link rel="stylesheet" href="libs/home_register/css/libs/animate.css">
 
-    <style type="text/css">
-        .statistik {
-    padding: 60px 0 60px; 
-    background: url("libs/img/bgStat.jpg");
-    /*background-color:#e56754;*/
-    background-attachment: fixed;
-    background-size:cover;  
-    color:#fff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-    </style>    
+       
 </head>
 <body>
     <!-- alertLogin -->
@@ -107,6 +97,7 @@ if($message_sales != '{}') {
 <div class="banner-img">
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 3em">
+            
             <!-- moobile view -->
             <div class="col-xs-12 d-md-none d-flex  mentor-atas wow fadeInDown" data-wow-duration="2s">
                 <img class="img-fluid " src="libs/home_register/img/mentor.png">
@@ -126,12 +117,12 @@ if($message_sales != '{}') {
             
 
             <!-- normal -->
-            <div class="col-xs-12 col-sm-12 col-md-7 header-keterangan wow slideInLeft d-none  d-md-block" data-wow-duration="2s">
+            <div class="col-xs-12 col-sm-12 col-md-5 header-keterangan wow slideInLeft d-none  d-md-block" data-wow-duration="2s">
                 <h2>LOOP APPERNTICE</h2>
                 <p>Mau magang di perusahaan Telekomunikasi No 1 di Indonesia khusus buat kamu yang punya jiwa kreatif,aktif ,suka tantangan dan mau belajar leadership,marketing dan enterpreneour </p>
                 <a href="?page=register_prentice&action=index"><button class="round-btn">Join Us</button></a>
             </div>
-            <div class="col-xs-12 d-none  d-md-block col-md-5 mentor wow slideInRight" data-wow-duration="2s">
+            <div class="col-xs-12 d-none  d-md-block col-md-7 mentor wow slideInRight" data-wow-duration="2s">
                 <!-- old -->
                 <!-- <img class="img-fluid " src="libs/home_register/img/mentor.png"> -->
                 <!-- new -->
@@ -149,33 +140,126 @@ if($message_sales != '{}') {
                   </div>
                 </div>
             </div>
-        </div><!-- container -->
-    </div><!-- row -->
+        </div><!-- row -->
+    </div><!-- container -->
 </div><!-- banner image -->
 
-<!--banner slider-->
-<section>
-    <div class="row" style="margin: 0 auto;max-width:100%" >
-        <div class="large-12 columns" style="margin: 0;padding: 0">
-            <div id="owl-banner" class="owl-carousel owl-theme" style="margin: 0">
-                <div class="item">
-                    <img src="libs/home_register/img/banner1.jpg" class="img-fluid" alt="Responsive image" >
-                </div>
-                <div class="item">
-                    <img src="libs/home_register/img/banner2.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="item">
-                    <img src="libs/home_register/img/banner3.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="item">
-                    <img src="libs/home_register/img/banner4.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
+<!-- bagian recent aksiku -->
+<div class="header-aksiku" style="height: 4em; background-color:#CF3124; padding-top: 1em">
+    <center> <h3 class="text-white">AKSIKU UPDATE</h3> </center>
+</div>
+
+<!-- konten recent aksiku -->
+
+
+    <!-- <div class="row justify-content-center"> -->
+        <!--  -->
+    <!-- <center>
+        <div>
+            <button type="button" class="btn btn-outline-success"> <i class="fa fa-camera-retro" aria-hidden="true"></i> Foto </button>
+        
+
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-video-camera" aria-hidden="true"></i> Video / Vlog</button>
+        
+        
+            <button type="button" class="btn btn-outline-danger"><i class="fa fa-file-text" aria-hidden="true"></i> Blog</button>
         </div>
-    </div>
-</section>
+    </center> -->
 
+     <div class="container" style="margin-top: 25px;margin-bottom: 15px; ">  
+    <!-- <div class="row justify-content-center" style="margin-right: 0px"> -->
+        
 
+            <div class="row justify-content-center">
+            <?php 
+                for ($i=0; $i < 2 ; $i++) { 
+                    ?>
+                    <!-- <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                        <img src="http://via.placeholder.com/250x250" alt="Responsive image" class="img-thumbnail">
+                    </div> 
+                                   -->
+                    <!-- <div class="col-sm-12 col-md-4 portfolio-item mobile">
+                        <img class="img-responsive" src="http://via.placeholder.com/250x250" alt="">
+                        <div class="bottom-left">Bottom Left</div>
+                        <div class="p-overlay">
+                            <p>Chat Mobile</p>
+                            <a href="#">
+                                <i class="fa fa-plus" aria-hidden="true"></i> 
+                            </a>
+
+                        </div>
+                    </div> -->
+                    <div class="col-sm-12 col-md-4 ">
+                         <figure class="snip1361">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample45.jpg" alt="sample45" />
+                              <div class="top-right vlog">Video</div>
+                              <figcaption>
+                                <h4>Meetup ambasador</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                        <figure class="snip1361 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample77.jpg" alt="sample77" />
+                            <div class="top-right foto">Foto</div>
+                              <figcaption>
+                                <h4>Loopprentice Malang</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                           
+                            
+                            <figure class="snip1361"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg" alt="sample99" />
+                                <div class="top-right artikel">Blog</div>
+                              <figcaption>
+                                <h4>T Cash  promo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                <?php 
+                }
+
+             ?>
+                
+                <button type="button" class="btn btn-outline-danger btn-md" style="margin-top: 10px">MORE</button>
+                    
+            </div>
+
+        </div><!-- end container -->
+    
+<!-- end bagian recent aksiku -->
+<!-- counter section -->
+    <section class="statistik">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 awalTesti">
+                        <h2 class="wow bounceInLeft text-center">Loopprentice Point</h2>
+                    </div>
+               
+                    
+                    <div class="col-lg-8">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-right wow bounceInRight">
+                        <p class="text-white">Dapatkan Loopprentice Point dan tukrkan dengan merchendaise yang menarik,dengan cara ikuti program loopprentice</p>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" >Login</button>
+                    </div>
+                        
+                    
+            </div>
+        
+        </div>
+    </section>
+
+<!-- end counter section -->
 <!-- bagian regioanl -->
 <div class="bg-regional">
     <div class="container-fluid regional-container">
@@ -396,6 +480,30 @@ if($message_sales != '{}') {
   </div>
 </div>
 
+<!--banner slider-->
+<section>
+    <div class="row" style="margin: 0 auto;max-width:100%" >
+        <div class="large-12 columns" style="margin: 0;padding: 0">
+            <div id="owl-banner" class="owl-carousel owl-theme" style="margin: 0">
+                <div class="item">
+                    <img src="libs/home_register/img/banner1.jpg" class="img-fluid" alt="Responsive image" >
+                </div>
+                <div class="item">
+                    <img src="libs/home_register/img/banner2.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="item">
+                    <img src="libs/home_register/img/banner3.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="item">
+                    <img src="libs/home_register/img/banner4.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end banner slider-->
+
+<!-- social media -->
 <footer id="footer" >
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="container text-center">
@@ -629,6 +737,15 @@ if($message_sales != '{}') {
    })(jQuery);
 
 
+   </script>
+
+   <script type="text/javascript">
+       /* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
    </script>
 </body>
 </html>

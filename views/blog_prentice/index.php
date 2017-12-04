@@ -20,10 +20,83 @@
     <link rel="stylesheet" type="text/css" href="libs/home_register/general/normalize.css">
     <link rel="stylesheet" type="text/css" href="libs/home_register/general/style.css">
     <link rel="stylesheet" type="text/css" href="libs/blog/style_blog.css">
+    <link rel="stylesheet" type="text/css" href="libs/home_register/general/style-index.css">
 
     <!-- wow.js -->
     <link rel="stylesheet" href="libs/home_register/css/libs/animate.css">
 
+    <style type="text/css">
+      .header-img{
+        width: 100%;
+      }
+      .head-wrap{
+        margin-top: 5em;
+      }
+      .head{
+        padding : 0 0 0 0;
+      }
+      .head:hover{
+        box-shadow: 
+      }
+      
+    .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.content:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+    .container .content {
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    padding: 90px 20px 20px 20px;
+    }
+    .content1{
+      background:linear-gradient( rgba(186, 17, 146, 0.50), rgba(254, 199, 108, 0.50));   
+    }
+    .content2{
+      background: /* color overlay */
+  linear-gradient( rgba(66, 35, 241, 0.45), rgba(158, 239, 225, 0.45));
+    }
+    .content3{
+      background:linear-gradient( rgba(186, 17, 146, 0.50), rgba(254, 199, 108, 0.50));
+    }
+    .content4{
+      background:linear-gradient( rgba(235, 135, 101, 0.70), rgba(156, 154, 254, 0.70), rgba(253, 173, 232, 0.70))
+    }
+    .content5{
+      
+    }
+    .read-btn{
+      border: solid white 3px;
+      border-radius: 7px;
+      background-color: transparent;
+      color: white;
+      padding: 15px;
+
+    }
+    .read-btn:hover{
+      border: solid white 3px;
+      border-radius: 7px;
+      background-color: white;
+      color: #5B5D60;
+      padding: 15px;
+      box-shadow: 10px 10px 5px #888888;
+
+    }
+    </style>
 
 </head>
 <body>
@@ -56,6 +129,55 @@
 </nav>
 <!-- akhir header -->
 <!-- Page Content -->
+    <div class="container head-wrap">
+      <div class="row">
+          <div class="col-lg-6 col-sm-6 col-xs-12 head  grad-1">
+            <img class="img-fluid header-img" alt="Responsive image" src="libs/img/hd1.jpg" >
+          <div class="content content1">
+              <h1>meet up</h1>
+              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            <button class="read-btn"> Read more</button>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6 col-xs-12 head grad-2"><img class="img-fluid header-img" src="libs/img/hd2.jpg" alt="">
+          <div class="content content2">
+              <h1>Acara meet up</h1>
+              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            <button class="read-btn"> Read more</button>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-xs-12 head grad-3" ><img class="img-fluid header-img" src="libs/img/hd3.jpg " alt="">
+          <div class="content content3">
+              <h1>upgrading loop ambasador</h1>
+              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque </p>
+            <button class="read-btn"> Read more</button>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-xs-12 head grad-4"><img class="img-fluid header-img" src="libs/img/hd4.jpg   " alt="">
+          <div class="content content4">
+              <h1>outbond mmojokerto</h1>
+              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            <button class="read-btn"> Read more</button>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-xs-12 head grad-5"><img class="img-fluid header-img" src="libs/img/hd5.jpg   " alt="">
+          <div class="content content1">
+              <h1>outbond malang</h1>
+              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+
+              <button class="read-btn"> Read more</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="container blog_konten">
 
       <div class="row">
@@ -63,9 +185,15 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-          <h1 class="my-4">Aksiku <br>
+          <!-- <h1 class="my-4">Aksiku <br>
             <small>Video / Vlog, Artikel, Foto, Promo, dll.</small>
-          </h1>
+          </h1> -->
+
+
+           
+
+
+          
 
           <?php foreach ($datablog as $key) { 
             $date = $key->post_date;
@@ -104,26 +232,64 @@
             </li>
           </ul>
 
-        </div>
+          <div class="container" style="margin-top: 25px;margin-bottom: 15px; margin-right: 10px;">  
+    <!-- <div class="row justify-content-center" style="margin-right: 0px"> -->
+        
+
+            <div class="row justify-content-center">
+            <?php 
+                for ($i=0; $i < 2 ; $i++) { 
+                    ?>
+                    <div class="col-sm-12 col-md-4 ">
+                         <figure class="snip1361">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample45.jpg"  />
+                              <div class="top-right vlog">Video</div>
+                              <figcaption>
+                                <h4>Meetup ambasador</h4>
+                                
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                        <figure class="snip1361 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample77.jpg"  />
+                            <div class="top-right foto">Foto</div>
+                              <figcaption>
+                                <h4>Loopprentice </h4>
+                                
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                           
+                            
+                            <figure class="snip1361"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg"  />
+                                <div class="top-right artikel">Blog</div>
+                              <figcaption>
+                                <h4>T Cash  promo</h4>
+                                
+                              </figcaption>
+                              <a href="#"></a>
+                            </figure>
+                    </div>
+                <?php 
+                }
+
+             ?>
+                
+                <button type="button" class="btn btn-outline-danger btn-md" style="margin-top: 10px">MORE</button>
+                    
+            </div>
+
+        </div><!-- end container -->
+        </div><!-- akhir col md 8 -->
 
         <!-- Sidebar Widgets kolom -->
-        <div class="col-md-4">
-
-          <!-- Search Widget -->
-          <!-- <div class="card my-4">
-            <h5 class="card-header">Pencarian</h5>
-            <div class="card-body">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-danger" type="button">Cari!</button>
-                </span>
-              </div>
-            </div>
-          </div> -->
+        <div class="col-md-4" style="margin-top: -20px;">
 
           <!-- Categories Widget -->
-          <div class="card my-4">
+          <div class="card my-4" >
             <h5 class="card-header">Kategori</h5>
             <div class="card-body">
               <div class="row ">
@@ -176,6 +342,81 @@
             </div>
           </div>
 
+          
+          <!-- posting terupdate -->
+          
+          <div class="card my-4">
+              <h5 class="card-header">Aksiku terPopuler</h5>
+              <div class="card-body">
+                <!-- urutan dan juduk -->
+                <?php for ($i=1; $i < 6; $i++) { 
+                  ?>
+                  <div class="row">
+                    <div class="col-5">
+                      <img src="http://via.placeholder.com/150x150" class="img-fluid" alt="img-responsive">
+                    </div>  
+                    <div class="col-7">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei</p>
+                      <hr>
+                    </div>
+                    
+                  </div>
+                  
+                <?php } ?>
+              
+
+              </div>
+          </div>
+          <!-- end posting terupdate -->
+
+          <!-- card share social media -->
+           <div class="card my-4">
+              <h5 class="card-header">Share</h5>
+              <div class="card-body">
+                <form class="form-inline">
+                    <div class="col-lg-12 text-center">
+                      
+                          <!-- Sharingbutton Facebook -->
+                          <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" target="_blank" aria-label="">
+                            <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+                              </div>
+                            </div>
+                          </a>
+
+                          <!-- Sharingbutton Twitter -->
+                          <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=<?php echo $data[0]->post_title;?>&amp;url=http%3A%2F%2F<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" target="_blank" aria-label="">
+                            <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+                              </div>
+                            </div>
+                          </a>
+
+                          <!-- Sharingbutton Google+ -->
+                          <a class="resp-sharing-button__link" href="https://plus.google.com/share?url=http%3A%2F%2F<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" target="_blank" aria-label="">
+                            <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3"/></svg>
+                              </div>
+                            </div>
+                          </a>
+
+                         
+
+                          <!-- Sharingbutton WhatsApp -->
+                          <a class="resp-sharing-button__link" href="whatsapp://send?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.%20http%3A%2F%2Fsharingbuttons.io" target="_blank" aria-label="">
+                            <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+                              </div>
+                            </div>
+                          </a>
+
+
+                      
+                    </div>
+                </form>
+              </div>
+          </div>
+          <!-- card share social media -->
         </div>
 
       </div>
